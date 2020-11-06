@@ -1,6 +1,6 @@
 .product_grid{
     width: 100%;
-    max-width: 19%;
+    max-width: 18%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-bottom: 8px;
@@ -10,7 +10,7 @@
 }
 .product_img{
     width: 100%;
-    height: 300px;
+    height: 290px;
 }
 .product_grid:hover{
     transform: scale(1.04);
@@ -18,12 +18,12 @@
 }
 .product-meta {
     box-sizing: border-box;
-    padding: 16px;
+    padding: 12px;
 }
 .product-meta > h4 {
     font-weight: 550;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 .product-meta > h5 {
     font-weight: 500;
@@ -35,8 +35,9 @@
 .product-meta > p {
     margin: 0;
     margin-top: 12px;
-    font-weight: 600;
-    color: #009688;
+    font-weight: 550;
+    color: #578d41;
+    font-size: 16px;
 }
 #cloting_section{
     padding: 0 8% 0;
@@ -48,20 +49,20 @@
     justify-content: start;
     margin: 2% 5%;
 }
-
+/*-----------more button----------------*/
 
 .morebutton{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-color: #c5b7b7;
     position: relative;
-    top: -330px;
-    left: 95%;
+    top: -300px;
+    left: 93%;
     border-radius: 50%;
     cursor: pointer;
 }
 .fa-angle-double-right{
-    margin-top: 5%;    
+    margin-top: 3%;    
     margin-left: 12%;
     color: rgb(100, 100, 107);
 }
@@ -108,11 +109,11 @@
 
 /* ---------------------------------------Sunglases_section--------------------------------------------------- */
 #accessories_section1{
-    padding: 0 8% 0;
+    padding: 0 4% 0;
     font-family: 'Sansita Swashed', cursive;
    
-}
-#accessories_grid{
+
+}#accessories_grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -120,3 +121,88 @@
 }
 
 
+
+@media screen and (max-width: 500px){
+    .product_grid{
+        width: 100%;
+        max-width:45%;
+        margin-left: 1%;
+        margin-right: 0.5%;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px #ccc;
+    
+    }
+    #clothing_grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 5%;
+    }
+    #accessories_grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 5%;
+    }
+    #sunglasess_grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 5%; 
+    }
+    #watches_grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 5%; 
+    }
+    
+    .product_img{
+        width: 100%;
+        height: 200px;
+    }
+    .product-meta {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .product-meta > h4 {
+        font-weight: 550;
+        margin: 0;
+        font-size: 12px;
+    }
+    .product-meta > h5 {
+        font-weight: 550;
+        opacity: 0.8;
+        margin: 0;
+        margin-top: 4px;
+        font-size: 10px;
+    }
+    .product-meta > p {
+        margin: 0;
+        margin-top: 4px;
+        font-weight: 550;
+        color: #009688;
+        font-size: 14px;
+    }
+    .morebutton{
+        height: 60px;
+        width: 60px;
+        background-color: #c5b7b7;
+        position: relative;
+        top: -200px;
+        left: 70%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .fa-angle-double-right{
+        margin-top: 3%;    
+        margin-left: 12%;
+        color: rgb(100, 100, 107);
+    }
+    .morebutton:hover{
+        border-radius: 30%;
+        transition: 0.3s;
+    }
+    
+}
