@@ -122,7 +122,7 @@
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 720px){
     .product_grid{
         width: 100%;
         max-width:45%;
@@ -156,6 +156,15 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 2% 5%; 
+    }
+    #sneekerGrid_grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 5%;   display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin: 2% 5%;
     }
     
     .product_img{
