@@ -17,11 +17,11 @@ function handelresonse(responseArrr){
     const isSneeker = responseArrr.filter(responseArrr => responseArrr.ProductType =="Shoes")
     const isSunglasses = responseArrr.filter(responseArrr => responseArrr.ProductType =="Sunglasses")
     const isAccessories= responseArrr.filter(responseArrr => responseArrr.ProductType =="Accessories")
-    craeteHomeProductgrid(isClotingMen,clothing_grid_div)
-    craeteHomeProductgrid(isWatchesMen,watches_grid_div)
-    craeteHomeProductgrid(isSneeker,sneekers_grid_div)
-    craeteHomeProductgrid(isSunglasses,sunglasess_grid_div)
-    craeteHomeProductgrid(isAccessories,accessories_grid_div)
+    craeteHomeProductgrid(isClotingMen.reverse(),clothing_grid_div)
+    craeteHomeProductgrid(isWatchesMen.reverse(),watches_grid_div)
+    craeteHomeProductgrid(isSneeker.reverse(),sneekers_grid_div)
+    craeteHomeProductgrid(isSunglasses.reverse(),sunglasess_grid_div)
+    craeteHomeProductgrid(isAccessories.reverse(),accessories_grid_div)
 }
 
 
